@@ -1,0 +1,131 @@
+Microsoft Windows [Version 6.3.9600]
+(c) Корпорація Майкрософт (Microsoft Corporation), 2013. Усі права захищені.
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git diff
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Pylypiv_01_PythonStarter/Pylypiv_traffic_light_1.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git add Pylypiv_traffic_light_1.py
+fatal: pathspec 'Pylypiv_traffic_light_1.py' did not match any files
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git add .
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Pylypiv_01_PythonStarter/Pylypiv_traffic_light_1.py
+
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git add Pylypiv_01_PythonStarter/Pylypiv_traffic_light_1.py
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git commit -m 'task Traffic light'
+error: pathspec 'Traffic' did not match any file(s) known to git
+error: pathspec 'light'' did not match any file(s) known to git
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git push
+Everything up-to-date
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git log --pretty=oneline
+ca318923b3f59298cf7d77875ab71cd33ca8efe7 (HEAD -> master, origin/master) 'init'
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git add Pylypiv_traffic_light_1.py
+fatal: pathspec 'Pylypiv_traffic_light_1.py' did not match any files
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git diff
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git add .
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git commit -m 'task Traffic light'
+error: pathspec 'Traffic' did not match any file(s) known to git
+error: pathspec 'light'' did not match any file(s) known to git
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git push
+Everything up-to-date
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git log
+commit ca318923b3f59298cf7d77875ab71cd33ca8efe7 (HEAD -> master, origin/master)
+Author: Victor Pylypiv <pylypivvv@gmail.com>
+Date:   Thu Sep 23 01:49:53 2021 +0300
+
+    'init'
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Pylypiv_01_PythonStarter/Pylypiv_traffic_light_1.py
+
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git add Pylypiv_traffic_light_1.py
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Pylypiv_01_PythonStarter/Pylypiv_traffic_light_1.py
+        new file:   Pylypiv_traffic_light_1.py
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Pylypiv_01_PythonStarter/Pylypiv_traffic_light_1.py
+
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git commit -m 'task Traffic light'
+error: pathspec 'Traffic' did not match any file(s) known to git
+error: pathspec 'light'' did not match any file(s) known to git
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git add Pylypiv_traffic_light_1.py
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git commit -m 'task Traffic light'
+error: pathspec 'Traffic' did not match any file(s) known to git
+error: pathspec 'light'' did not match any file(s) known to git
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git add Pylypiv_traffic_light_1.py
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git commit -m 'task_Traffic_light'
+[master 93251e1] 'task_Traffic_light'
+ 2 files changed, 72 insertions(+)
+ create mode 100644 Pylypiv_01_PythonStarter/Pylypiv_traffic_light_1.py
+ create mode 100644 Pylypiv_traffic_light_1.py
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 993 bytes | 331.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/VictorPylypiv/Pylypivvv_python.git
+   ca31892..93251e1  master -> master
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>git log
+commit 93251e119509ef9f3933841eb00935ab72f250a0 (HEAD -> master, origin/master)
+Author: Victor Pylypiv <pylypivvv@gmail.com>
+Date:   Thu Sep 23 08:51:51 2021 +0300
+
+    'task_Traffic_light'
+
+commit ca318923b3f59298cf7d77875ab71cd33ca8efe7
+Author: Victor Pylypiv <pylypivvv@gmail.com>
+Date:   Thu Sep 23 01:49:53 2021 +0300
+
+    'init'
+
+D:\! doc\VVV\pythonVV\Pylypivvv_Python>
