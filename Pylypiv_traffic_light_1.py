@@ -14,6 +14,15 @@
     #  и выведите на экран соответствующее сообщение "get ready!"
 
 
+def get_m():
+    m = input('enter "ped" or "car": ')
+    while True:
+        if m == 'ped' or m == 'car':
+            return m
+        else:
+            m = input('enter "ped" or "car": ')
+
+
 def get_t():
     t = int(input('From 15 to 60 seconds: '))
     while True:
@@ -36,8 +45,12 @@ def tr_l_ped(seconds):
 
 
 def main():
+    m = get_m()
     t = get_t()
-    tr_l_ped(t)
+    if m == 'ped':
+        tr_l_ped(t)
+    else:
+        tr_l_dr(t)
 
 
 if __name__ == '__main__':
