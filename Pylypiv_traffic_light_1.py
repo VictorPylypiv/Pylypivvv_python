@@ -44,6 +44,22 @@ def tr_l_ped(seconds):
             print('go!')
 
 
+def tr_l_dr(seconds):
+    wait = seconds
+    light = 'red'
+    while light == 'red' or light == 'yellow':
+        if wait == 1:
+            print('get ready')
+            light = 'yellow'
+            wait -= 1
+        if wait > 1:
+            print(f'wait {wait} sec')
+            wait -= 1
+        else:
+            light = 'green'
+            print('drive')
+
+
 def main():
     m = get_m()
     t = get_t()
