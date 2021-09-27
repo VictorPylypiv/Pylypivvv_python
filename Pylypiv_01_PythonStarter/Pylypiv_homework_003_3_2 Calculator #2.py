@@ -3,14 +3,14 @@ import math
 l1 = input("Калькулятор\n | + | - | * | / |\n | ^ | sin | cos | tg |\nВведіть <число 1> <дія> <число 2>: ").split()
 
 
-def math_0(l):
-    x = float(l[0])
-    op = l[1]
+def math_0(l_math):
+    x = float(l_math[0])
+    op = l_math[1]
     l2 = ["sin", "cos", "tg"]
     if op in l2:
         return math_2(x, op)
     else:
-        y = float(l[2])
+        y = float(l_math[2])
         return math_1(x, op, y)
 
 
@@ -25,8 +25,6 @@ def math_1(x, op, y):
         return x / y
     elif op == '^':
         return x ** y
-    elif y == None:
-        return x
 
 
 def math_2(x, op):
