@@ -37,6 +37,6 @@ def math_2(x, op):
     elif op == 'tg':
         return math.tan(x)
 
-result = math_0(l1)
 
+result = math_0(l1)
 print(result)
