@@ -30,5 +30,6 @@ def list_employees(n):
             i += 1
     return list_e
 
-
-print(list_employees(3))
+a = list_employees(3)
+for i in a:
+    print(i.name)

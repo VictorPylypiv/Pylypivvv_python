@@ -15,7 +15,7 @@ class Book:
             self.year += '-II'
         # return self.ganre, self.year
 
-    def comment(self, rating='', review=''):
+    def comment(self):
         rating, review = input("Your rating "), input("Your review ")
         self.rating, self.review = rating, review
         return f'{self.name} - {rating}, {review}'
