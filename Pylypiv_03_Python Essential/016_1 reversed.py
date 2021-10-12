@@ -1,13 +1,13 @@
 # Напишите генератор, который возвращает элементы заданного списка в обратном порядке (аналог reversed)
 
-def reversed_list(l):
+def reversed_list(my_list):
     counter = 0
-    n = len(l)
-    for i in range(n):
+    n = len(my_list)
+    for _i in range(n):
         if not n - counter:
             raise StopIteration
         counter -= 1
-        yield l[counter]
+        yield my_list[counter]
 
 
 l1 = [1, 2, 5, 8, 11]
@@ -21,13 +21,14 @@ while True:
         break
 
 
-def reversed_list2(l):
+def reversed_list2(my_list):
     n = 0
-    try:
-        n -= 1
-        yield l[n]
-    except IndexError:
-        return
+    for _i in my_list:
+        try:
+            n -= 1
+            yield my_list[n]
+        except IndexError:
+            return
 
 
 l2 = reversed_list2(l1)

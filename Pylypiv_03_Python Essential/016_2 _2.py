@@ -21,4 +21,11 @@ l1 = [1, 2, 5, 8, 11, 14, 18]
 
 print(numbers_squared_gen_1(l1))
 print(numbers_squared_loop(l1))
-print(foo(l1))
+
+l2 = foo(l1)
+while True:
+    try:
+        print(l2.__next__())
+    except StopIteration:
+        print("The list is empty")
+        break
