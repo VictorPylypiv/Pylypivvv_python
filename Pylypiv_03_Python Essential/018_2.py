@@ -8,8 +8,8 @@ def short_link():
 
 
 s_link = short_link()
-
-print(s_link.get(input("enter the link you want to open: ")))
+l1 = input("enter the link you want to open: ")
+print(s_link.get(l1))
 
 
 # def short_link_1(link, name):
