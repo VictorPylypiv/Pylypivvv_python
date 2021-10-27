@@ -22,8 +22,11 @@ def in_table():
             return False
 
 
+<<<<<<< HEAD
 in_table()
 
+=======
+>>>>>>> de813843faaa33b2697b8b61171ab5292d0aa648
 # purpose_1 = [
 #     ('lesson_materials_1', 10, '05.09.2021'),
 #     ('lesson_materials_2', 15, '15.09.2021'),

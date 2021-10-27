@@ -7,6 +7,7 @@ import sqlite3
 conn = sqlite3.connect('./budget.db')
 cur = conn.cursor()
 
+<<<<<<< HEAD
 
 def count_expense():
     x1 = input('enter the start date of the period: ')
@@ -18,6 +19,16 @@ def count_expense():
 
 y = count_expense()
 print(f'The amount of costs is {y}')
+=======
+def count_expense():
+    x1 = input('enter the start date of the period: ')
+    x2 = input('enter the end date of the period: ')
+    return cur.execute('SELECT sum(summ) FROM budget2 WHERE date BETWEEN ' + x1 + ' AND ' + x2)
+
+
+y = count_expense()
+print(y)
+>>>>>>> de813843faaa33b2697b8b61171ab5292d0aa648
 
 conn.commit()
 conn.close()
