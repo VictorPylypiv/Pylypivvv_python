@@ -1,6 +1,6 @@
 # заповнення масиву в .json. Нові - в початок списку
-# import json
-# from f_019_0_0 import create_person
+import json
+from f_019_0_0 import create_person
 # from collections import deque
 
 
